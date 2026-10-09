@@ -54,6 +54,7 @@ Other consensus methods:
 \code{\link[=Average]{Average()}},
 \code{\link[=Frequency]{Frequency()}},
 \code{\link[=Greedy]{Greedy()}},
+\code{\link[=Hipstr]{Hipstr()}},
 \code{\link[=Loose]{Loose()}},
 \code{\link[=Majority]{Majority()}},
 \code{\link[=MajorityPlus]{MajorityPlus()}},

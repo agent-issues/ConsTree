@@ -99,6 +99,7 @@ Other consensus methods:
 \code{\link[=Adams]{Adams()}},
 \code{\link[=Frequency]{Frequency()}},
 \code{\link[=Greedy]{Greedy()}},
+\code{\link[=Hipstr]{Hipstr()}},
 \code{\link[=Local]{Local()}},
 \code{\link[=Loose]{Loose()}},
 \code{\link[=Majority]{Majority()}},

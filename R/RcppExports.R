@@ -48,6 +48,10 @@ majorityPlusConsensusCpp <- function(edgeList, nTip) {
     .Call(`_ConsTree_majorityPlusConsensusCpp`, edgeList, nTip)
 }
 
+hipstrConsensus <- function(edges, tipIndex, nTip, majority) {
+    .Call(`_ConsTree_hipstrConsensus`, edges, tipIndex, nTip, majority)
+}
+
 localConsensus <- function(edgeList, nTip, minrs) {
     .Call(`_ConsTree_localConsensus`, edgeList, nTip, minrs)
 }
