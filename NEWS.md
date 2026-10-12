@@ -1,3 +1,9 @@
+# ConsTree 1.0.1.9000 (development)
+
+- `CCD0()` / `CCD0MAP()`: maximum a posteriori tree of the CCD0 distribution
+  (Berling et al. 2025), a fully resolved summary of rooted posterior samples.
+
+
 # ConsTree 1.0.1 (2026-09-16)
 
 - Fix omissions in references and attribution.

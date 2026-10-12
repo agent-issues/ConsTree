@@ -75,6 +75,20 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// ccd0MapCpp
+Rcpp::List ccd0MapCpp(Rcpp::List edgeList, int nTip, Rcpp::IntegerVector tieRank, bool cladeProbability);
+RcppExport SEXP _ConsTree_ccd0MapCpp(SEXP edgeListSEXP, SEXP nTipSEXP, SEXP tieRankSEXP, SEXP cladeProbabilitySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< Rcpp::List >::type edgeList(edgeListSEXP);
+    Rcpp::traits::input_parameter< int >::type nTip(nTipSEXP);
+    Rcpp::traits::input_parameter< Rcpp::IntegerVector >::type tieRank(tieRankSEXP);
+    Rcpp::traits::input_parameter< bool >::type cladeProbability(cladeProbabilitySEXP);
+    rcpp_result_gen = Rcpp::wrap(ccd0MapCpp(edgeList, nTip, tieRank, cladeProbability));
+    return rcpp_result_gen;
+END_RCPP
+}
 // adamsConsensusCpp
 std::string adamsConsensusCpp(Rcpp::List edgeList, int nTip);
 RcppExport SEXP _ConsTree_adamsConsensusCpp(SEXP edgeListSEXP, SEXP nTipSEXP) {
@@ -211,6 +225,7 @@ static const R_CallMethodDef CallEntries[] = {
     {"_ConsTree_cpp_bhv_distance", (DL_FUNC) &_ConsTree_cpp_bhv_distance, 6},
     {"_ConsTree_cpp_bhv_tree_at", (DL_FUNC) &_ConsTree_cpp_bhv_tree_at, 7},
     {"_ConsTree_cpp_bhv_mean", (DL_FUNC) &_ConsTree_cpp_bhv_mean, 7},
+    {"_ConsTree_ccd0MapCpp", (DL_FUNC) &_ConsTree_ccd0MapCpp, 4},
     {"_ConsTree_adamsConsensusCpp", (DL_FUNC) &_ConsTree_adamsConsensusCpp, 2},
     {"_ConsTree_frequencyConsensusCpp", (DL_FUNC) &_ConsTree_frequencyConsensusCpp, 2},
     {"_ConsTree_greedyConsensusCpp", (DL_FUNC) &_ConsTree_greedyConsensusCpp, 2},

@@ -28,6 +28,10 @@ cpp_bhv_mean <- function(mems, lens, leaves, nTip, maxIter, tol, cauchyLength) {
     .Call(`_ConsTree_cpp_bhv_mean`, mems, lens, leaves, nTip, maxIter, tol, cauchyLength)
 }
 
+ccd0MapCpp <- function(edgeList, nTip, tieRank, cladeProbability) {
+    .Call(`_ConsTree_ccd0MapCpp`, edgeList, nTip, tieRank, cladeProbability)
+}
+
 adamsConsensusCpp <- function(edgeList, nTip) {
     .Call(`_ConsTree_adamsConsensusCpp`, edgeList, nTip)
 }

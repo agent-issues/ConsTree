@@ -97,6 +97,7 @@ Split-based summaries: \code{\link[=Strict]{Strict()}}, \code{\link[=Majority]{M
 
 Other consensus methods:
 \code{\link[=Adams]{Adams()}},
+\code{\link[=CCD0]{CCD0()}},
 \code{\link[=Frequency]{Frequency()}},
 \code{\link[=Greedy]{Greedy()}},
 \code{\link[=Local]{Local()}},
