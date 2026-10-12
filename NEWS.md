@@ -1,3 +1,14 @@
+# ConsTree 1.0.1.9000 (development version)
+
+- `Transfer()` now defaults to `init = "majority"`, starting from the
+  majority-rule consensus and refining by adding and pruning splits.
+  This reproduces the add-and-prune strategy of PhyloCRISP
+  (Takazawa et al. 2026): across 34 validation sets, it matched the
+  previous default (`init = "empty"`) in 26, gave a lower transfer
+  dissimilarity cost in 7, and a higher one in 1.
+  Use `init = "empty"` to recover the previous behaviour.
+
+
 # ConsTree 1.0.1 (2026-09-16)
 
 - Fix omissions in references and attribution.
