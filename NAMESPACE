@@ -9,12 +9,16 @@ export(BHVMean)
 export(BHVVariance)
 export(Frequency)
 export(Greedy)
+export(Hipster)
+export(Hipstr)
 export(Local)
 export(Loose)
 export(MR)
 export(Majority)
 export(MajorityPlus)
 export(MajorityRule)
+export(MrHipster)
+export(MrHipstr)
 export(Quartet)
 export(RStar)
 export(Strict)
@@ -34,6 +38,7 @@ importFrom(TreeTools,
   as.Splits
 )
 importFrom(ape,
+  .uncompressTipLabel,
   as.phylo,
   bionj,
   collapse.singles,

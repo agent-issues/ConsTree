@@ -42,6 +42,7 @@ Other consensus methods:
 \code{\link[=Adams]{Adams()}},
 \code{\link[=Average]{Average()}},
 \code{\link[=Frequency]{Frequency()}},
+\code{\link[=Hipstr]{Hipstr()}},
 \code{\link[=Local]{Local()}},
 \code{\link[=Loose]{Loose()}},
 \code{\link[=Majority]{Majority()}},
