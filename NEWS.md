@@ -27,6 +27,7 @@ Rooted-tree consensus methods:
 Distance- and branch-length-based summaries:
 
 - `Average()`: distance-based average consensus.
+- `Transfer()`: tree minimizing the summed transfer distances to the inputs.
 - `Quartet()`: tree minimizing the summed symmetric quartet distance to the
   inputs (Takazawa et al. 2026).
 - Billera-Holmes-Vogtmann treespace summaries: `BHVDistance()` (Owen-Provan
