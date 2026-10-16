@@ -43,6 +43,7 @@ Closely related: \code{\link[=Majority]{Majority()}}, \code{\link[=MajorityPlus]
 Other consensus methods:
 \code{\link[=Adams]{Adams()}},
 \code{\link[=Average]{Average()}},
+\code{\link[=CCD0]{CCD0()}},
 \code{\link[=Greedy]{Greedy()}},
 \code{\link[=Local]{Local()}},
 \code{\link[=Loose]{Loose()}},

@@ -40,6 +40,7 @@ ape::write.tree(Adams(trees))
 \seealso{
 Other consensus methods:
 \code{\link[=Average]{Average()}},
+\code{\link[=CCD0]{CCD0()}},
 \code{\link[=Frequency]{Frequency()}},
 \code{\link[=Greedy]{Greedy()}},
 \code{\link[=Local]{Local()}},
