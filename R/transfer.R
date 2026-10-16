@@ -27,8 +27,10 @@
 #'   `"first"` picks the first improving action encountered (faster but
 #'   potentially lower quality).
 #' @param init Character string specifying the initial consensus:
-#'   `"empty"` (default) starts with no splits (purely additive);
-#'   `"majority"` starts with the majority-rule consensus and refines.
+#'   `"majority"` (default) starts with the majority-rule consensus and
+#'   refines it by adding and pruning splits, as in the add-and-prune
+#'   strategy of \insertCite{Takazawa2026;textual}{ConsTree};
+#'   `"empty"` starts with no splits (purely additive).
 #'
 #' @return A tree of class `phylo`.
 #'
@@ -55,7 +57,7 @@
 Transfer <- function(trees,
                      scale = TRUE,
                      greedy = c("best", "first"),
-                     init = c("empty", "majority")) {
+                     init = c("majority", "empty")) {
   greedy <- match.arg(greedy)
   init <- match.arg(init)
 

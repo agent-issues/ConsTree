@@ -8,7 +8,7 @@ Transfer(
   trees,
   scale = TRUE,
   greedy = c("best", "first"),
-  init = c("empty", "majority")
+  init = c("majority", "empty")
 )
 }
 \arguments{
@@ -25,8 +25,10 @@ the unscaled (raw Hamming) transfer distance.}
 potentially lower quality).}
 
 \item{init}{Character string specifying the initial consensus:
-\code{"empty"} (default) starts with no splits (purely additive);
-\code{"majority"} starts with the majority-rule consensus and refines.}
+\code{"majority"} (default) starts with the majority-rule consensus and
+refines it by adding and pruning splits, as in the add-and-prune
+strategy of \insertCite{Takazawa2026;textual}{ConsTree};
+\code{"empty"} starts with no splits (purely additive).}
 }
 \value{
 A tree of class \code{phylo}.
