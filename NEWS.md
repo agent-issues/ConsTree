@@ -1,8 +1,9 @@
-# ConsTree 1.0.1.9000 (development version)
+# ConsTree 1.0.1.9000 (2026-10-16)
 
-- `Hipstr()` and `MrHipstr()` (aliases `Hipster()`, `MrHipster()`): HIPSTR and
-  majority-rule HIPSTR summary trees of rooted posterior samples (Baele et al.
-  2025), with the credibility of each clade.
+## New functions
+
+- `Hipstr()` and `MrHipstr()`: HIPSTR and majority-rule HIPSTR summary trees of
+  rooted posterior samples (Baele et al. 2025), with the credibility of each clade.
 
 
 # ConsTree 1.0.1 (2026-09-16)
